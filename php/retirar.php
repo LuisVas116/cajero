@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         
         $insert = "INSERT INTO transacciones (c_cuenta, c_cuenta_origen, c_cuenta_destino, valor, tipo_transaccion) 
-                   VALUES ('$cuenta_origen', '$cuenta_origen', '', '$monto', 'RETIRO')";
+                   VALUES ('$cuenta_origen', '$cuenta_origen', '', '-$monto', 'RETIRO')";
         
        
         mysqli_query($conexion, $update_origen);

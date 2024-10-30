@@ -80,7 +80,7 @@ if (!$result1 || !$result2) {
                     
                     echo "</table>";
                 } else {
-                    echo "<p>No se encontraron cuentas para este usuario.</p>";
+                    echo "<p>No se encontraron movimientos para esta cuenta.</p>";
                 }
 
                 mysqli_close($conexion);
