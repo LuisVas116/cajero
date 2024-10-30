@@ -1,0 +1,200 @@
+/* Banner Superior */
+.banner {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 128, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+body {
+    background-image: url(../images/bg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.contenedor__todo {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.caja__informacion h2 {
+    font-size: 24px;
+    color: #ddd;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.caja__informacion p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+/* Estilos de Botón Nueva Cuenta */
+.nueva-cuenta {
+    padding: 12px 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 200px;
+    border: 2px solid #46A2FD;
+    background-color: rgba(0, 128, 255, 0.6);
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 300ms;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.nueva-cuenta:hover {
+    background-color: #fff;
+    color: #46A2FD;
+    border: 2px solid #fff;
+}
+
+/* Estilos del Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content h3 {
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content button {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    background-color: #46A2FD;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #005BBB;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.transacciones {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.transacciones button {
+    padding: 12px 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 200px;
+    border: 2px solid #46A2FD;
+    background-color: rgba(0, 128, 255, 0.6);
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 300ms;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.transacciones button:hover {
+    background-color: #fff;
+    color: #46A2FD;
+    border: 2px solid #fff;
+}
+
+
+
+
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    .contenedor__todo {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .caja__informacion {
+        margin-bottom: 20px;
+    }
+
+    .transacciones {
+        align-items: center;
+    }
+
+    .transacciones button {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
