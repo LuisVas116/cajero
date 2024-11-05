@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel de Usuario</title>
+    <title>Tu cuenta</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/estilos2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="banner">
@@ -15,7 +16,7 @@
 
     <main class="contenedor__todo">
         <div class="caja__informacion">
-            <h2>Panel de Usuario</h2>
+            <h2>Tu cuenta</h2>
             <p>Elige la operación que deseas realizar:</p>
             
             <button class="nueva-cuenta" onclick="abrirModal()">Nueva cuenta</button>
@@ -48,8 +49,13 @@
             <button onclick="window.location.href='php/saldo.php'">Consultar Saldo</button>
             <button onclick="window.location.href='php/cerrar_sesion.php'">Salir</button>
         </div>
+
+        
+
     </main>
-    
+    <button class="whatsapp-button" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp whatsapp-icon"></i> Contáctanos
+    </button>
     <script src="./assets/js/scripts2.js"></script>
 </body>
 </html>

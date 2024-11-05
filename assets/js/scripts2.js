@@ -24,3 +24,10 @@ function abrirModalSaldo() {
 function cerrarModalSaldo() {
     document.getElementById("modalConsultarSaldo").style.display = "none";
 }*/
+
+
+function openWhatsApp() {
+    // Cambia la URL de WhatsApp a la página que quieras
+    const url = 'https://wa.me/+573017478865'; // Reemplaza 1234567890 con el número de teléfono deseado
+    window.open(url, '_blank');
+}
