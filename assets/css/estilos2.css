@@ -13,6 +13,7 @@
     z-index: 1000;
 }
 
+
 body {
     background-image: url(../images/bg4.jpg);
     background-size: cover;
@@ -54,7 +55,7 @@ body {
     line-height: 1.5;
 }
 
-/* Estilos de Botón Nueva Cuenta */
+
 .nueva-cuenta {
     padding: 12px 20px;
     margin: 10px 0;

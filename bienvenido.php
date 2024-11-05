@@ -10,7 +10,8 @@
 <body>
     <header class="banner">
         <h1>BancoAmigo</h1>
-    </header>
+        </header>
+        
 
     <main class="contenedor__todo">
         <div class="caja__informacion">
@@ -39,6 +40,7 @@
         </div>
         
         <div class="transacciones">
+            <button onclick="window.location.href='php/datos.php'">Cambiar Datos</button>
             <button onclick="window.location.href='php/transferencia.php'">Transferir</button>
             <button onclick="window.location.href='php/recargar.php'">Recargar</button>
             <button onclick="window.location.href='php/retirar.php'">Retirar</button>
@@ -47,7 +49,7 @@
             <button onclick="window.location.href='php/cerrar_sesion.php'">Salir</button>
         </div>
     </main>
-
+    
     <script src="./assets/js/scripts2.js"></script>
 </body>
 </html>

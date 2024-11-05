@@ -15,7 +15,7 @@ $query2 = "SELECT a.c_transaccion AS codigo, a.c_cuenta_origen AS cuenta_origen,
            FROM transacciones a, usuarios b, m_cuentas c 
            WHERE a.c_cuenta_destino = c.c_cuenta AND b.id = c.id_usuario AND b.usuario = '$id_usuario'";
 
-// Ejecutar ambas consultas
+
 $result1 = mysqli_query($conexion, $query1);
 $result2 = mysqli_query($conexion, $query2);
 
