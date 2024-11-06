@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         
-        $query_origen = "SELECT b.saldo, b.c_cuenta FROM usuarios a, m_cuentas b 
+        $query_origen = "SELECT b.saldo, b.c_cuenta,b.tipo_cuenta FROM usuarios a, m_cuentas b 
             WHERE a.id = b.id_usuario AND a.usuario = '$id_usuario' AND b.tipo_cuenta = '$tipo_cuenta'";
         $result_origen = mysqli_query($conexion, $query_origen);
         $row_origen = mysqli_fetch_assoc($result_origen);
@@ -27,7 +27,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $cuenta_origen = $row_origen['c_cuenta']; 
 
        
-        if ($saldo_origen < $monto) {
+        if ($saldo_origen < $monto && trim($tipo_cuenta) === 'ahorros') {
+            echo '
+            <script>
+            alert("Saldo insuficiente");
+            window.location ="./transferencia.php";
+            </script>
+            ';
             throw new Exception("Saldo insuficiente.");
         }
 
