@@ -4,7 +4,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Cambiar datos</title>
+    <title>Actualizar datos</title>
     <link rel="stylesheet" href="../assets/css/estilos4.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
     
     <div class="contenedor__todo">
         <div class="caja__informacion">
-            <h2>Cambiar datos</h2>
+            <h2>Actualizar datos</h2>
             <div class="modal-content">
                 <form method="POST" action="datos2.php">
                     <label for="nombre_completo">Nombres completos:</label>

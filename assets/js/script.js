@@ -1,4 +1,4 @@
-//Ejecutando funciones
+
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);
 
@@ -6,14 +6,14 @@ document.getElementById("btn__registrarse").addEventListener("click", register);
 window.addEventListener("resize", anchoPage);
 
 
-//Declarando variables
+
 let formulario_login = document.querySelector(".formulario__login");
 let formulario_register = document.querySelector(".formulario__register");
 let contenedor_login_register = document.querySelector(".contenedor__login-register");
 let caja_trasera_login = document.querySelector(".caja__trasera-login");
 let caja_trasera_register = document.querySelector(".caja__trasera-register");
 
-    //FUNCIONES
+
 
 function anchoPage(){
 

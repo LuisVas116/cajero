@@ -30,11 +30,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $cuenta_origen = $row_origen['c_cuenta'];
 
         
-        if ($saldo_origen < $monto) {
+        if ($saldo_origen< $monto && trim($tipo_cuenta_origen) === 'ahorros') {
             echo '
             <script>
             alert("Saldo insuficiente");
-            window.location ="./recargar.php";
+            window.location ="./retirar.php";
             </script>
             ';
             throw new Exception("Saldo insuficiente.");

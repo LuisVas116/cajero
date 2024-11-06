@@ -39,7 +39,7 @@ if (!$result1 || !$result2) {
             <h2>Movimientos</h2>
             
             <?php
-                // Verificar si hay resultados en alguna de las consultas
+               
                 if (mysqli_num_rows($result1) > 0 || mysqli_num_rows($result2) > 0) {
                     echo "<table class='movimientos-tabla'>";
                     echo "<tr>
@@ -52,7 +52,7 @@ if (!$result1 || !$result2) {
                             <th>Valor</th>
                           </tr>";
                     
-                    // Mostrar resultados de la primera consulta
+                    
                     while ($row = mysqli_fetch_assoc($result1)) {
                         echo "<tr>";
                         echo "<td>" . htmlspecialchars($row['codigo']) . "</td>";
@@ -65,7 +65,7 @@ if (!$result1 || !$result2) {
                         echo "</tr>";
                     }
 
-                    // Mostrar resultados de la segunda consulta
+                    
                     while ($row = mysqli_fetch_assoc($result2)) {
                         echo "<tr>";
                         echo "<td>" . htmlspecialchars($row['codigo']) . "</td>";

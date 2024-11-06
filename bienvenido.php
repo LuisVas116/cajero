@@ -41,7 +41,7 @@
         </div>
         
         <div class="transacciones">
-            <button onclick="window.location.href='php/datos.php'">Cambiar Datos</button>
+            <button onclick="window.location.href='php/datos.php'">Actualizar Datos</button>
             <button onclick="window.location.href='php/transferencia.php'">Transferir</button>
             <button onclick="window.location.href='php/recargar.php'">Recargar</button>
             <button onclick="window.location.href='php/retirar.php'">Retirar</button>

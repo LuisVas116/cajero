@@ -16,14 +16,7 @@ window.onclick = function(event) {
     }
 };
 
-/*
-function abrirModalSaldo() {
-    document.getElementById("modalConsultarSaldo").style.display = "flex";
-}
 
-function cerrarModalSaldo() {
-    document.getElementById("modalConsultarSaldo").style.display = "none";
-}*/
 
 
 function openWhatsApp() {
